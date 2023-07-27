@@ -1,0 +1,6 @@
+streamlit
+langchain
+PdfToTextLoader
+Chroma
+PyPDF2
+
