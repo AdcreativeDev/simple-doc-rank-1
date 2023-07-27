@@ -1,6 +1,5 @@
 streamlit
 langchain
-PdfToTextLoader
 Chroma
 PyPDF2
 openai
