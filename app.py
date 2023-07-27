@@ -26,7 +26,6 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 # with open("config.yml", "r") as f:
 #     config = yaml.safe_load(f)
-# OPENAI_API_KEY = config['OPENAI_KEY']
 
 PDFS, NAMES, TXTS = [], [], []
 CHUNK_SIZE = 1000
@@ -42,6 +41,8 @@ with col1:
     system_openai_api_key = os.environ.get('OPENAI_API_KEY')
     system_openai_api_key = st.text_input(":key: OpenAI Key :", value=system_openai_api_key)
     os.environ["OPENAI_API_KEY"] = system_openai_api_key
+    OPENAI_API_KEY = system_openai_api_key
+
 
 with col2:
     st.write('Sample screenshot')
