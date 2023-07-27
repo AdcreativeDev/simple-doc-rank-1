@@ -85,7 +85,7 @@ if file_1 and file_2:
 
     with st.spinner('Read File and Vectorization'):    
         st.write("✔️  PDF Files loaded.")
-        llm = OpenAI(model_name='text-davinci-003', temperature=0, openai_api_key=OPENAI_API_KEY)
+        llm = OpenAI(model_name='text-davinci-003', temperature=0, openai_api_key=system_openai_api_key)
         st.write("✔️  Connect to OpenAi.")
         dataset_vectorizer = DatasetVectorizer()
         documents_1, texts_1, docsearch_1 = dataset_vectorizer.vectorize([TXTS[0]], chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP, openai_key=OPENAI_API_KEY)
