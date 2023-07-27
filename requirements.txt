@@ -4,3 +4,4 @@ streamlit
 OpenAI
 tiktoken
 PyPDF2
+PyYAML
