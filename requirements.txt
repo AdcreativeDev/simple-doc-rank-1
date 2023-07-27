@@ -5,3 +5,4 @@ OpenAI
 tiktoken
 PyPDF2
 PyYAML
+pysqlite3-binary
