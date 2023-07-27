@@ -5,3 +5,4 @@ streamlit
 OpenAI
 tiktoken
 PyPDF2
+sqlite3 >= 3.35.0
