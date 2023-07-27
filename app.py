@@ -1,9 +1,9 @@
-import yaml
+# import yaml
+
 import streamlit as st
 import os
 from langchain import OpenAI, VectorDBQA, LLMChain
 from langchain.prompts import PromptTemplate
-
 from pdf_loaders import PdfToTextLoader
 from dataset_vectorizers import DatasetVectorizer
 from PIL import Image
@@ -24,10 +24,10 @@ st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 
 
-with open("config.yml", "r") as f:
-    config = yaml.safe_load(f)
+# with open("config.yml", "r") as f:
+#     config = yaml.safe_load(f)
+# OPENAI_API_KEY = config['OPENAI_KEY']
 
-OPENAI_API_KEY = config['OPENAI_KEY']
 PDFS, NAMES, TXTS = [], [], []
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 500
